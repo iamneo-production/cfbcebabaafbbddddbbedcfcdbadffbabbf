@@ -71,7 +71,7 @@ export default function StopWatch() {
             timerRef.current = undefined;
         }
     }, [])
-    return <div style={{ backgroundColor: '#54bde1', height: '550px', width: '45%', borderRadius: '35px', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+    return <div style={{ backgroundColor: '#54bde1', height: '550px', width: '855px', borderRadius: '35px', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
         <div style={{ backgroundColor: 'white', height: '75%', width: '99%', display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '30px', justifyContent: 'center' }}>
             <p style={{ fontWeight: 'bold', fontSize: '40px', }}>React Stopwatch</p>
             <p data-testid="time" style={{ fontWeight: 'bold', fontSize: '38px', marginTop: '2vh' }}>{Minutes < 10 ? `0${Minutes}` : Minutes} : {Seconds < 10 ? `0${Seconds}` : Seconds} : {MilliSeconds < 10 ? `0${MilliSeconds}` : MilliSeconds}</p>
